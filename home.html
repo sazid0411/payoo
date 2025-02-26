@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-700">
+
+    <section class="mx-auto max-w-md min-h-screen bg-white">
+        <header cla>
+            <nav class="flex justify-between items-center p-3">
+                <div class="flex items-center gap-2">
+                    <img src="assets/Group.png" alt="" class="w-16">
+                    <div>
+                        <h1 class="text-2xl font-bold">$ <span >4500</span></h1>
+                        <p class="text-lg font-bold">Available Balance</p>
+                    </div>
+                </div>
+                <button class="btn text-xl">Log Out</button>
+            </nav>
+        </header>
+        <main>
+
+            <div class="mt-5 p-2">
+                <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
+                <p class="text-lg font-medium text-gray-500">Enjoy easy and convenient financial services with us.
+                    Cashout charge is low and </p>
+            </div>
+
+            <div class="cards mt-5 grid grid-cols-3 gap-2 p-2 text-center">
+                <!--  -->
+                <div id="add-money" class=" p-3 border border-gray-700 rounded-lg place-items-center  cursor-pointer ">
+                    <img src="assets/wallet 1.png" alt="" class="">
+                    <h1 class="text-xl font-medium">Add Money</h1>
+                </div>
+                <!--  -->
+                <div id="cash-out" class=" p-3 border border-gray-700 rounded-lg place-items-center cursor-pointer">
+                    <img src="assets/purse 1.png" alt="" class="">
+                    <h1 class="text-xl font-medium">Cashout</h1>
+                </div>
+                <!--  -->
+                <div id="transfer" class=" p-3 border border-gray-700 rounded-lg place-items-center cursor-pointer">
+                    <img src="assets/send 1.png" alt="" class="">
+                    <h1 class="text-xl font-medium">Transfer </h1>
+                </div>
+                <!--  -->
+                <div id="bonus" class=" p-3 border border-gray-700 rounded-lg place-items-center cursor-pointer">
+                    <img src="assets/financial 1.png" alt="" class="">
+                    <h1 class="text-xl font-medium">Get Bonus</h1>
+                </div>
+                <!--  -->
+                <div id="pay-bill" class=" p-3 border border-gray-700 rounded-lg place-items-center cursor-pointer">
+                    <img src="assets/money 1.png" alt="" class="">
+                    <h1 class="text-xl font-medium">Pay Bill</h1>
+                </div>
+                <!--  -->
+                <div id="transact" class=" p-3 border border-gray-700 rounded-lg place-items-center cursor-pointer">
+                    <img src="assets/transaction 1.png" alt="" class="">
+                    <h1 class="text-xl font-medium">Transactions</h1>
+                </div>
+
+            </div>
+
+            <!--  -->
+
+            <div id="add-money-section" class="">
+                <h2 class="pl-5 text-xl font-semibold mt-5">Add Money</h2>
+                <div class=" bg-base-200 ">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card  w-full  shadow-2xl">
+                            <form class="card-body">
+                                <label class="label">
+                                    <span class="label-text">Select Bank </span>
+                                </label>
+                                <select name="" id="select" class="input-bordered input">
+                                    <option value="bKash">bKash</option>
+                                    <option value="Nagad">Nagad</option>
+                                    <option value="rocket">Rocket</option>
+                                    <option value="Upay">Upay</option>
+                                </select>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Account Number </span>
+                                    </label>
+                                    <input id="account-field" value="01234567891" type="number"
+                                        placeholder="Account Number" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Amount</span>
+                                    </label>
+                                    <input id="account-field" type="number" placeholder="Account Number"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">PIN</span>
+                                    </label>
+                                    <input id="pin" value="1234" type="text" placeholder="PIN"
+                                        class="input input-bordered" required />
+
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-add" class="btn btn-primary">Add Money</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+            <!--  -->
+
+            <div id="cash-out-section" class="hidden">
+                <h2 class="pl-5 text-xl font-semibold mt-5">Cash Out</h2>
+                <div class=" bg-base-200 ">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card  w-full  shadow-2xl">
+                            <form class="card-body">
+
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Agent Account Number </span>
+                                    </label>
+                                    <input id="account-field" value="01234567891" type="number"
+                                        placeholder="Account Number" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Amount</span>
+                                    </label>
+                                    <input id="account-field" type="number" placeholder="Account Number"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">PIN</span>
+                                    </label>
+                                    <input id="pin" value="1234" type="text" placeholder="PIN"
+                                        class="input input-bordered" required />
+
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-login" class="btn btn-primary">Withdraw</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+            <div id="transfer-section" class="hidden">
+                <h2 class="pl-5 text-xl font-semibold mt-5">Transfer</h2>
+                <div class=" bg-base-200 ">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card  w-full  shadow-2xl">
+                            <form class="card-body">
+
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">User Account Number </span>
+                                    </label>
+                                    <input id="account-field" value="01234567891" type="number"
+                                        placeholder="Account Number" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Amount</span>
+                                    </label>
+                                    <input id="account-field" type="number" placeholder="Account Number"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">PIN</span>
+                                    </label>
+                                    <input id="pin" value="1234" type="text" placeholder="PIN"
+                                        class="input input-bordered" required />
+
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-login" class="btn btn-primary">Transfer</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+            <div id="bonus-section" class="hidden">
+                <h2 class="pl-5 text-xl font-semibold mt-5">Add Money</h2>
+                <div class=" bg-base-200 ">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card  w-full  shadow-2xl">
+                            <form class="card-body">
+                                <label class="label">
+                                    <span class="label-text">Select Bank </span>
+                                </label>
+                                <select name="" id="select" class="input-bordered input">
+                                    <option value="bKash">bKash</option>
+                                    <option value="Nagad">Nagad</option>
+                                    <option value="rocket">Rocket</option>
+                                    <option value="Upay">Upay</option>
+                                </select>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Account Number </span>
+                                    </label>
+                                    <input id="account-field" value="01234567891" type="number"
+                                        placeholder="Account Number" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Amount</span>
+                                    </label>
+                                    <input id="account-field" type="number" placeholder="Account Number"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">PIN</span>
+                                    </label>
+                                    <input id="pin" value="1234" type="text" placeholder="PIN"
+                                        class="input input-bordered" required />
+
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-login" class="btn btn-primary">Add Money</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+            <div id="pbill-section" class="hidden">
+                <h2 class="pl-5 text-xl font-semibold mt-5">Add Money</h2>
+                <div class=" bg-base-200 ">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card  w-full  shadow-2xl">
+                            <form class="card-body">
+                                <label class="label">
+                                    <span class="label-text">Select Bank </span>
+                                </label>
+                                <select name="" id="select" class="input-bordered input">
+                                    <option value="bKash">bKash</option>
+                                    <option value="Nagad">Nagad</option>
+                                    <option value="rocket">Rocket</option>
+                                    <option value="Upay">Upay</option>
+                                </select>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Account Number </span>
+                                    </label>
+                                    <input id="account-field" value="01234567891" type="number"
+                                        placeholder="Account Number" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Amount</span>
+                                    </label>
+                                    <input id="account-field" type="number" placeholder="Account Number"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">PIN</span>
+                                    </label>
+                                    <input id="pin" value="1234" type="text" placeholder="PIN"
+                                        class="input input-bordered" required />
+
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-login" class="btn btn-primary">Add Money</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+            <div id="transact-section" class="hidden">
+                <h2 class="pl-5 text-xl font-semibold mt-5">Add Money</h2>
+                <div class=" bg-base-200 ">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card  w-full  shadow-2xl">
+                            <form class="card-body">
+                                <label class="label">
+                                    <span class="label-text">Select Bank </span>
+                                </label>
+                                <select name="" id="select" class="input-bordered input">
+                                    <option value="bKash">bKash</option>
+                                    <option value="Nagad">Nagad</option>
+                                    <option value="rocket">Rocket</option>
+                                    <option value="Upay">Upay</option>
+                                </select>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Account Number </span>
+                                    </label>
+                                    <input id="account-field" value="01234567891" type="number"
+                                        placeholder="Account Number" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Amount</span>
+                                    </label>
+                                    <input id="account-field" type="number" placeholder="Account Number"
+                                        class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">PIN</span>
+                                    </label>
+                                    <input id="pin" value="1234" type="text" placeholder="PIN"
+                                        class="input input-bordered" required />
+
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-login" class="btn btn-primary">Add Money</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </main>
+
+    </section>
+
+
+    <script src="js/utility.js"></script>
+    <script src="js/home.js"></script>
+
+
+
+</body>
+
+</html>
