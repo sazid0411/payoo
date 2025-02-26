@@ -17,11 +17,11 @@
                 <div class="flex items-center gap-2">
                     <img src="assets/Group.png" alt="" class="w-16">
                     <div>
-                        <h1 class="text-2xl font-bold">$ <span >4500</span></h1>
+                        <h1 class="text-2xl font-bold">$ <span id="balance">4500</span></h1>
                         <p class="text-lg font-bold">Available Balance</p>
                     </div>
                 </div>
-                <button class="btn text-xl">Log Out</button>
+                <button id="logout" class="btn text-xl">Log Out</button>
             </nav>
         </header>
         <main>
@@ -94,7 +94,7 @@
                                     <label class="label">
                                         <span class="label-text">Amount</span>
                                     </label>
-                                    <input id="account-field" type="number" placeholder="Account Number"
+                                    <input id="amount-field" type="number" placeholder="Account Number"
                                         class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
@@ -135,7 +135,7 @@
                                     <label class="label">
                                         <span class="label-text">Amount</span>
                                     </label>
-                                    <input id="account-field" type="number" placeholder="Account Number"
+                                    <input id="amountout-field" type="number" placeholder="Amount"
                                         class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
@@ -147,7 +147,7 @@
 
                                 </div>
                                 <div class="form-control mt-6">
-                                    <button id="btn-login" class="btn btn-primary">Withdraw</button>
+                                    <button id="btn-out" class="btn btn-primary">Withdraw</button>
                                 </div>
                             </form>
                         </div>
