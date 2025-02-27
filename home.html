@@ -135,7 +135,7 @@
                                     <label class="label">
                                         <span class="label-text">Amount</span>
                                     </label>
-                                    <input id="amountout-field" type="number" placeholder="Amount"
+                                    <input id="cashout-ammount" type="number" placeholder="Amount"
                                         class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
@@ -238,24 +238,24 @@
                                 <label class="label">
                                     <span class="label-text">Select Bill Type </span>
                                 </label>
-                                <select name="" id="select" class="input-bordered input">
-                                    <option value="bKash">Electric</option>
-                                    <option value="Nagad">Water</option>
-                                    <option value="rocket">GAS</option>
-                                    <option value="Upay">Internet</option>
+                                <select name="" id="select-pay" class="input-bordered input">
+                                    <option value="Electric">Electric</option>
+                                    <option value="Water">Water</option>
+                                    <option value="GAS">GAS</option>
+                                    <option value="Internet">Internet</option>
                                 </select>
                                 <div class="form-control">
                                     <label class="label">
                                         <span class="label-text">Bill Number </span>
                                     </label>
-                                    <input id="account-field" type="number" placeholder="Bill Number"
+                                    <input id="bill-account" type="number" placeholder="Bill Number"
                                         class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
                                     <label class="label">
                                         <span class="label-text">Amount</span>
                                     </label>
-                                    <input id="account-field" type="number" placeholder="Account Number"
+                                    <input id="pay-amount" type="number" placeholder="Amount"
                                         class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
@@ -267,7 +267,7 @@
 
                                 </div>
                                 <div class="form-control mt-6">
-                                    <button id="btn-login" class="btn btn-primary">Pay Bill</button>
+                                    <button id="btn-pay" class="btn btn-primary">Pay Bill</button>
                                 </div>
                             </form>
                         </div>
@@ -279,17 +279,7 @@
 
             <div id="transact-section" class="hidden">
                 <h2 class="pl-5 text-xl font-semibold mt-5">Transaction History</h2>
-                <div class="p-3 bg-gray-200 rounded-lg m-2">
-                    <h1 class="font-bold text-xl ">5000 tk added from bKash.</h1>
-                    <!-- <h2 id="hh1" class="text-xs mt-1"></h2>
-                    <script>
-
-                        const date = new Date(d,m,y)
-                        document.getElementById("hh1").innerText = date
-                        console.log(date)
-
-                    </script> -->
-                </div>
+               
             </div>
         </main>
 
